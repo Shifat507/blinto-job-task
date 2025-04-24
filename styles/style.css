@@ -1,0 +1,77 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared Styles */
+body{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+.text-gray{
+    color: #1E293B;
+}
+.text-light-gray{
+    color: #475569;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.item-center{
+    align-items: center;
+}
+.item-start{
+    align-items: start;
+}
+
+/* Navbar styles */
+.navbar{
+    max-width: 1216px;
+    margin: 0 auto;
+}
+.brand{
+    font-size: 30px;
+}
+.brand-img{
+    margin-top: 8px;
+}
+.nav-link{
+    gap: 32px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-item a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-secondary{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 20px;
+    border: 1px solid #CBD5E1;
+    border-radius: 1234px;
+    background-color: white;
+}
+.btn-primary{
+    color: #FFFFFF;
+    background-color: #4F46E5;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 20px;
+    border: 1px solid #CBD5E1;
+    border-radius: 1234px;
+}
+.btn{
+    gap: 8px;
+}
