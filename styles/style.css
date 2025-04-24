@@ -9,53 +9,86 @@
 }
 
 /* shared Styles */
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.flex{
+
+a:hover {
+    cursor: pointer;
+}
+
+.flex {
     display: flex;
 }
-.text-gray{
+
+.text-gray {
     color: #1E293B;
 }
-.text-light-gray{
+
+.text-light-gray {
     color: #475569;
 }
-.justify-between{
+
+.justify-between {
     justify-content: space-between;
 }
-.item-center{
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
     align-items: center;
 }
-.item-start{
+
+.item-start {
     align-items: start;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.font-md {
+    font-size: 14px;
+    color: #475569;
+}
+
 /* Navbar styles */
-.navbar{
+.navbar {
     max-width: 1216px;
     margin: 0 auto;
 }
-.brand{
+
+.brand {
     font-size: 30px;
 }
-.brand-img{
+
+.brand-img {
     margin-top: 8px;
 }
-.nav-link{
+
+.nav-link {
     gap: 32px;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
 }
-.nav-item a{
+
+.nav-item a {
     text-decoration: none;
     margin-right: 30px;
     font-size: 16px;
     font-weight: 700;
 }
-.btn-secondary{
+
+.nav-item a:hover {
+    color: #4f46e5;
+}
+
+.btn-secondary {
     font-size: 16px;
     font-weight: 700;
     padding: 13px 20px;
@@ -63,7 +96,8 @@ body{
     border-radius: 1234px;
     background-color: white;
 }
-.btn-primary{
+
+.btn-primary {
     color: #FFFFFF;
     background-color: #4F46E5;
     font-size: 16px;
@@ -72,6 +106,93 @@ body{
     border: 1px solid #CBD5E1;
     border-radius: 1234px;
 }
-.btn{
+
+.btn-secondary:hover {
+    cursor: pointer;
+    background-color: #b7bcc5;
+}
+
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: #3832bb;
+}
+
+.btn {
     gap: 8px;
 }
+
+/* 
+---------------------
+     Banner Styles
+---------------------
+*/
+
+.banner-container {
+    margin-top: 60px;
+    background: linear-gradient(to bottom, #ffffff 0%, #98acec 150%);
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.sub-title {
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 12px;
+    background-color: #eef2ff;
+    border-radius: 20px;
+}
+
+.store-btn {
+    gap: 8px;
+    margin-top: 48px;
+    margin-bottom: 64px;
+
+}
+
+.mockup-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.banner-image {
+    padding-right: 70px;
+    max-width: 100%;
+    width: 850px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.banner-image2 {
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    width: 300px;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+/* 
+---------------------
+     Brands Styles
+---------------------
+*/
+
+.brands {
+    display: grid;
+    grid-template-columns: repeat(6, auto); 
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around; 
+    gap: 40px 60px; 
+    padding: 64px 112px;
+  }
+  
