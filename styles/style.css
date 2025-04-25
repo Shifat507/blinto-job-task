@@ -51,7 +51,7 @@ a:hover {
 }
 
 .font-md {
-    font-size: 14px;
+    font-size: 20px;
     color: #475569;
 }
 
@@ -186,13 +186,54 @@ a:hover {
      Brands Styles
 ---------------------
 */
-
+.brand-container{
+    padding: 64px 112px;
+    background-color: #F8FAFC;
+}
 .brands {
     display: grid;
     grid-template-columns: repeat(6, auto); 
     grid-template-rows: repeat(2, auto);
-    justify-content: space-around; 
-    gap: 40px 60px; 
-    padding: 64px 112px;
+    justify-content: center; 
+    gap: 20px; 
+    /* padding: 64px 112px; */
   }
+
+  /* Feature styles */
+.feature-container{
+    /* margin-top: 60px; */
+    padding: 96px 112px;
+}
+.feature-title{
+    color: #1E293B;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.feature-description{
+    color: #475569;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.feature-img{
+    margin: 20px auto;
+}
+.feature-img img{
+    width: 80px;
+    height: 80px;
+}
   
