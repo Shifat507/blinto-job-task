@@ -57,12 +57,16 @@ a:hover {
     margin-bottom: 16px;
 }
 
-.gap-2 {
-    gap: 32px;
-}
-
 .gap-1 {
     gap: 12px;
+}
+
+.gap-2{
+    gap: 16px;
+}
+
+.gap-3 {
+    gap: 32px;
 }
 
 .w-full {
@@ -122,6 +126,21 @@ a:hover {
     border: 1px solid #CBD5E1;
     border-radius: 1234px;
     background-color: white;
+}
+
+.btn-info {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 20px;
+    color: #4F46E5;
+    border: 1px solid #4F46E5;
+    border-radius: 1234px;
+    background-color: white;
+}
+
+.btn-info:hover{
+    background-color: #e2edff;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -411,6 +430,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px;
 }
 
 .faq-question:hover {
@@ -425,6 +445,7 @@ hr {
     padding-left: 4px;
     padding-right: 4px;
     border-radius: 100%;
+    margin-left: 8px;
 }
 
 .faq-question.active::after {
@@ -441,7 +462,107 @@ hr {
 .faq-answer-content {
     padding: 1rem 0;
 }
+/* Download App Section style --------------------------------------------------------------------------------------------------------------------------------*/
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 112px;
+    background-color: #EEF2FF;
+    /* position: relative; */
+    overflow: hidden;
+}
 
+/* App Content */
+.app-content {
+    width: 560px;
+    z-index: 2;
+}
+
+.app-content h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.app-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #334155;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-info {
+    background-color: white;
+    color: #4F46E5;
+    border: 1px solid #4F46E5;
+}
+
+.btn-info:hover {
+    background-color: #f0f0ff;
+}
+
+.btn-primary {
+    background-color: #4F46E5;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4338CA;
+}
+
+/* App Images */
+.app-images {
+    position: relative;
+    width: 50%;
+    height: 500px;
+}
+
+.app-image1 {
+    position: absolute;
+    width: 200px;
+    right: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.app-image2 {
+    position: absolute;
+    width: 200px;
+    right: 50px;
+    top: 150px;
+    transform: translateY(-65%);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.app-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 /* Responsive for Mobile Device */
 @media screen and (max-width: 640px) {
     .navbar {
@@ -542,8 +663,44 @@ hr {
         flex-direction: column;
     }
     .faq-content{
-        width: 350px;
+        width: 300px;
         margin: 48px auto;
     }
+    .faq-question{
+        font-size: 14px;
+    }
+    .app-container {
+        flex-direction: column;
+        padding: 32px 16px;
+        gap: 32px;
+    }
+    
+    .app-content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .app-images {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 24px;
+    }
+    
+    .app-image1 {
+        width: 120px;
+        right: 75%;
+        transform: translate(50%);
+        top: 10%;
+    }
+    
+    .app-image2 {
+        width: 120px;
+        right: 25%;
+        transform: translate(50%);
+        top: 10%;
+    }
+    
+    
 
 }
