@@ -279,6 +279,10 @@ a:hover {
 }
 
 /* Testimonial Styles */
+.testimonial-container{
+    background-color: #F8FAFC;
+    padding-top: 96px;
+}
 .profile-name{
     margin: 0px;
     font-size: 16px;
@@ -299,5 +303,25 @@ a:hover {
     border-radius: 20px;
     padding: 24px;
 }
-
+/* Office Location Styles */
+.office-branch{
+    padding: 24px;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    width: 232px;
+}
+.location-container{
+    padding: 96px 112px;
+}
+.country{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.location{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
   
