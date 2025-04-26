@@ -74,16 +74,20 @@ a:hover {
     max-width: 1216px;
     margin: 0 auto;
 }
-.menu-bar{
+
+.menu-bar {
     display: none;
 }
-.menu-bar button{
+
+.menu-bar button {
     background-color: white;
     border: none;
 }
-.menu-bar button:hover{
+
+.menu-bar button:hover {
     cursor: pointer;
 }
+
 .brand {
     font-size: 30px;
 }
@@ -366,24 +370,101 @@ a:hover {
     margin: 0;
 }
 
+/* F/Q Section */
+.faq-container{
+    background-color: #F8FAFC;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.faq-content{
+    width: 800px;
+    margin: 48px auto;
+}
+h1 {
+    color: #334155;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p.intro {
+    color: #666;
+    /* margin-bottom: 2rem; */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.faq-item {
+    /* margin-bottom: 1rem; */
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-question::after {
+    content: "▿";
+    color: #475569;
+    font-size: 1.2rem;
+    border: 2px solid #475569;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 100%;
+}
+
+.faq-question.active::after {
+    content: "▵";
+}
+
+.faq-answer {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer-content {
+    padding: 1rem 0;
+}
+
 /* Responsive for Mobile Device */
 @media screen and (max-width: 640px) {
-    .navbar{
+    .navbar {
         padding-left: 16px;
         padding-right: 16px;
     }
-    .nav-link{
+
+    .nav-link {
         display: none;
     }
-    .menu-bar{
+
+    .menu-bar {
         display: block;
     }
-    .registration-btn{
+
+    .registration-btn {
         display: none;
     }
-    .banner-image{
+
+    .banner-image {
         padding-right: 0px;
     }
+
     .banner-image2 {
         position: absolute;
         top: 25%;
@@ -392,6 +473,7 @@ a:hover {
         z-index: 2;
         border-radius: 20px;
     }
+
     .brand-container {
         padding: 64px 16px;
     }
@@ -451,11 +533,17 @@ a:hover {
         grid-template-columns: repeat(1, 1fr);
         gap: 32px;
     }
+
     .location-container {
         padding: 96px 16px;
     }
-    .branches-container{
+
+    .branches-container {
         flex-direction: column;
     }
-    
+    .faq-content{
+        width: 350px;
+        margin: 48px auto;
+    }
+
 }
