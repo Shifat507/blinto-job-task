@@ -56,11 +56,17 @@ a:hover {
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.gap-2{
+
+.gap-2 {
     gap: 32px;
 }
-.gap-1{
+
+.gap-1 {
     gap: 12px;
+}
+
+.w-full {
+    width: 100%;
 }
 
 /* Navbar styles */
@@ -68,7 +74,16 @@ a:hover {
     max-width: 1216px;
     margin: 0 auto;
 }
-
+.menu-bar{
+    display: none;
+}
+.menu-bar button{
+    background-color: white;
+    border: none;
+}
+.menu-bar button:hover{
+    cursor: pointer;
+}
 .brand {
     font-size: 30px;
 }
@@ -194,31 +209,38 @@ a:hover {
      Brands Styles
 ---------------------
 */
-.brand-container{
+.brand-container {
     padding: 64px 112px;
     background-color: #F8FAFC;
 }
+
 .brands {
     display: grid;
-    grid-template-columns: repeat(6, auto); 
+    grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(2, auto);
-    justify-content: center; 
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
     /* padding: 64px 112px; */
-  }
+}
 
-  /* Feature styles */
-.feature-container{
+.brand-img img {
+    width: 144px;
+}
+
+/* Feature styles */
+.feature-container {
     /* margin-top: 60px; */
     padding: 96px 112px;
 }
-.feature-title{
+
+.feature-title {
     color: #1E293B;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
 }
-.feature-description{
+
+.feature-description {
     color: #475569;
     font-size: 14px;
     font-weight: 400;
@@ -226,102 +248,214 @@ a:hover {
     margin-bottom: 8px;
     text-align: center;
 }
-.features{
+
+.features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 64px;
 }
-.feature{
+
+.feature {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.feature-img{
+
+.feature-img {
     margin: 20px auto;
 }
-.feature-img img{
+
+.feature-img img {
     width: 80px;
     height: 80px;
 }
 
 /* Stats Styles */
-.stats-container{
+.stats-container {
     padding: 96px 300px;
     background-color: #f8fafc;
 }
-.stat{
+
+.stat {
     color: #645de8;
     font-size: 60px;
     font-weight: 700;
     padding: 8px 16px;
+    margin: 0px auto;
 }
-.stat-title{
+
+.stat-title {
     font-size: 1rem;
     font-weight: 700;
 }
-.procrastinators-container{
+
+.procrastinators-container {
     padding: 96px 112px;
 }
-.procrastinators-content{
+
+.procrastinators-content {
     border-left: 5px solid #4f46e5;
     padding: 24px 96px 24px 28px;
     margin-bottom: 8px;
 }
-.sub-heading{
+
+.sub-heading {
     font-size: 20px;
     font-weight: 700;
     margin-top: 4px;
     margin-bottom: 4px;
 }
-.border-l-gray{
+
+.border-l-gray {
     border-left: 5px solid #e0e7ff;
 }
 
 /* Testimonial Styles */
-.testimonial-container{
+.testimonial-container {
     background-color: #F8FAFC;
     padding-top: 96px;
 }
-.profile-name{
+
+.profile-name {
     margin: 0px;
     font-size: 16px;
     font-weight: 700;
 }
-.profile-designation{
+
+.profile-designation {
     font-size: 16px;
     font-weight: 400;
 }
-.review-container{
+
+.review-container {
     padding: 64px 112px 96px 112px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
-.review{
+
+.review {
     border: 2px solid #e2e8f0;
     border-radius: 20px;
     padding: 24px;
 }
+
 /* Office Location Styles */
-.office-branch{
+.office-branch {
     padding: 24px;
     border: 2px solid #e2e8f0;
     border-radius: 20px;
     width: 232px;
 }
-.location-container{
+
+.location-container {
     padding: 96px 112px;
 }
-.country{
+
+.country {
     font-size: 20px;
     font-weight: 800;
     margin-top: 24px;
     margin-bottom: 8px;
 }
-.location{
+
+.location {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
 }
-  
+
+/* Responsive for Mobile Device */
+@media screen and (max-width: 640px) {
+    .navbar{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .registration-btn{
+        display: none;
+    }
+    .banner-image{
+        padding-right: 0px;
+    }
+    .banner-image2 {
+        position: absolute;
+        top: 25%;
+        right: 12%;
+        width: 150px;
+        z-index: 2;
+        border-radius: 20px;
+    }
+    .brand-container {
+        padding: 64px 16px;
+    }
+
+    .brands {
+        grid-template-columns: repeat(3, auto);
+        gap: 20px;
+        /* grid-template-rows: repeat(2, auto); */
+    }
+
+    .brand-img img {
+        width: 86px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .feature-container {
+        padding: 96px 16px;
+    }
+
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stats-container {
+        padding: 96px 16px;
+    }
+
+    .stats-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .procrastinators-container {
+        padding: 96px 16px;
+    }
+
+    .procrastinators-content-box {
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .procrastinators-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .procrastinators-img img {
+        margin: 5px auto;
+        width: 250px;
+    }
+
+    .review-container {
+        padding: 64px 16px 96px 16px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+    .location-container {
+        padding: 96px 16px;
+    }
+    .branches-container{
+        flex-direction: column;
+    }
+    
+}
