@@ -51,8 +51,16 @@ a:hover {
 }
 
 .font-md {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #475569;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.gap-2{
+    gap: 32px;
+}
+.gap-1{
+    gap: 12px;
 }
 
 /* Navbar styles */
@@ -133,10 +141,10 @@ a:hover {
 }
 
 .banner-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .sub-title {
@@ -236,4 +244,60 @@ a:hover {
     width: 80px;
     height: 80px;
 }
+
+/* Stats Styles */
+.stats-container{
+    padding: 96px 300px;
+    background-color: #f8fafc;
+}
+.stat{
+    color: #645de8;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 8px 16px;
+}
+.stat-title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.procrastinators-container{
+    padding: 96px 112px;
+}
+.procrastinators-content{
+    border-left: 5px solid #4f46e5;
+    padding: 24px 96px 24px 28px;
+    margin-bottom: 8px;
+}
+.sub-heading{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.border-l-gray{
+    border-left: 5px solid #e0e7ff;
+}
+
+/* Testimonial Styles */
+.profile-name{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.profile-designation{
+    font-size: 16px;
+    font-weight: 400;
+}
+.review-container{
+    padding: 64px 112px 96px 112px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.review{
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 24px;
+}
+
   
